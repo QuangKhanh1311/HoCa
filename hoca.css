@@ -124,7 +124,7 @@
     width: 50px;
     height: 50px;
 
-    animation: moveRight 20s linear infinite; /* Thời gian, hình thức và lặp lại */
+    animation: moveRight 80s linear infinite; /* Thời gian, hình thức và lặp lại */
     top: 50%; /* Giữa theo chiều dọc */
     right: 0; /* Bắt đầu từ bên phải */
     transform-origin: center; /* Đặt trục xoay ở giữa phần tử */
