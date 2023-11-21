@@ -106,15 +106,19 @@
         transform: translate(-50%, -50%) scale(0.2) rotateY(0deg);
     }
     30% {
-        right: calc(100% - 100px);
+        right: 80%;
         transform: translate(-50%, -50%) scale(0.2) rotateY(0deg);
     }
     50% {
-        right: calc(100% - 100px);
+        right: 80%;
         transform: translate(-50%, -50%) scale(0.2) rotateY(90deg);
     }
     80% {
-        right: calc(100% - 100px);
+        right: 80%;
+        transform: translate(-50%, -50%) scale(0.2) rotateY(180deg);
+    }
+    90% { 
+        right:80%;
         transform: translate(-50%, -50%) scale(0.2) rotateY(180deg);
     }
     100% {
