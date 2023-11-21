@@ -142,4 +142,32 @@
     right: 100px; /* Bắt đầu từ bên phải */
     transform-origin: center; /* Đặt trục xoay ở giữa phần tử */
 }
-
+.crab{
+    position:absolute;
+    bottom: 100px;
+    left: 50%;
+    width: 20px;
+    height: 100px;
+    animation-name: crawl;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes crawl {
+    0% {
+      transform: translateX(-500px) scale(0.3) rotateY(180deg);
+    }
+    25% {
+      transform: translateX(150px) scale(0.3) rotateY(180deg);
+    }
+    50% {
+      transform: translateX(500px) scale(0.3) rotateY(180deg);
+    }
+    75% {
+      transform: translateX(150px) scale(0.3) rotateY(180deg);
+    }
+    100% {
+      transform: translateX(-500px) scale(0.3) rotateY(180deg);
+    }
+}
