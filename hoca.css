@@ -180,3 +180,35 @@
       transform: translateX(-500px) scale(0.3) rotateY(180deg);
     }
 }
+.sua {position: absolute;
+    width: 30px;
+    height: 20px;
+
+    animation: moveUpDown 10s linear infinite; /* Thời gian, hình thức và lặp lại */
+    left: 50%; /* Giữa theo chiều dọc */
+    bottom: 0; /* Bắt đầu từ bên phải */
+    transform-origin: center; /* Đặt trục xoay ở giữa phần tử */
+}
+@keyframes moveUpDown {
+    0% {
+        bottom: 150px;
+        /* transform: translate(-50%, -50%) scale(0.2) rotateY(0deg); */
+    }
+    30% {
+        bottom: calc( 400px);
+        /* transform: translate(-50%, -50%) scale(0.2) rotateY(0deg); */
+    }
+    50% {
+        bottom: calc(500px);
+        /* transform: translate(-50%, -50%) scale(0.2) rotateY(90deg); */
+    }
+    80% {
+        bottom: calc(600px);
+        /* transform: translate(-50%, -50%) scale(0.2) rotateY(180deg); */
+    }
+    100% {
+        bottom: 700px;
+        opacity: 0;
+        /* transform: translate(-50%, -50%) scale(0.2) rotateY(180deg); */
+    }
+}
