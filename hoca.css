@@ -1,4 +1,6 @@
-
+*{
+    padding: 0px;
+}
 #background
 {
     width: 100%;
@@ -31,7 +33,7 @@
 .nemofish1
 {
    
-   top: 80px;
+   top: 90px;
    left:-50px;
    position: absolute;
    animation-delay: 3s;
@@ -40,14 +42,14 @@
 .nemofish2
 {
    
-   top: 25px;
+   top: 50px;
    left:50px;
    position: absolute;
    animation-delay: 4s;
 }.nemofish3
 {
    
-   top: 50px;
+   top: 60px;
    position: absolute;
    animation-delay: 5s;
 }.nemofish4
@@ -63,16 +65,18 @@
 @keyframes redfish 
 {
 
-	0%   {right:100px; top:400px; opacity: 0;}
-	1%   {right:100px; top:400px;opacity: 1;}
-	20%  {right:700px; top:400px;}
+	0%   {right:150px; top:300px; opacity: 0;}
+	1%   {right:300px; top:400px;opacity: 1;}
+	20%  {right:700px; top:400px;opacity: 1;}
 	40%  {right:800px; }
 	60%  {right:900px; top:100px; }
     80% {right: 800px; top: 200px}
+    82% {right: 700px; top: 200px}
     85% {right: 600px; top: 200px}
 	90%  {right:500px; top:200px; }
+    92%  {right:400px; top:200px; }
     95%  {right:300px; top:300px; }
-	100% {right:-100px; top:400px;transform: rotateY(150deg);} 
+	100% {right:150px; top:300px;transform: scaleX(-1);} 
 }
 @keyframes nemofish
 {
@@ -89,8 +93,8 @@
         opacity: 1;
     }
     100%{
-        transform: translateX(1800px);
-        opacity: 1;
+        transform: translateX(1355px);
+        opacity: 0;
     }
 }
 
@@ -124,7 +128,7 @@
     width: 50px;
     height: 50px;
 
-    animation: moveRight 80s linear infinite; /* Thời gian, hình thức và lặp lại */
+    animation: moveRight 70s linear infinite; /* Thời gian, hình thức và lặp lại */
     top: 50%; /* Giữa theo chiều dọc */
     right: 0; /* Bắt đầu từ bên phải */
     transform-origin: center; /* Đặt trục xoay ở giữa phần tử */
