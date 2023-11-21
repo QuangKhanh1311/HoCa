@@ -7,3 +7,4 @@ function b2()
 {
     document.getElementById("background").src='background1.jpg';
 }
+
